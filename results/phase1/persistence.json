@@ -1,0 +1,63 @@
+{
+  "name": "persistence",
+  "phase": "phase1",
+  "time": "2026-10-23 22:50:28",
+  "config": {
+    "seed": 0,
+    "split": {
+      "train": [
+        "adolescent#004",
+        "adolescent#006",
+        "adolescent#010",
+        "adolescent#001",
+        "adolescent#009",
+        "adolescent#002",
+        "adult#001",
+        "adult#005",
+        "adult#009",
+        "adult#008",
+        "adult#006",
+        "adult#002",
+        "child#009",
+        "child#003",
+        "child#002",
+        "child#007",
+        "child#008",
+        "child#004"
+      ],
+      "val": [
+        "adolescent#003",
+        "adolescent#008",
+        "adult#004",
+        "adult#007",
+        "child#010",
+        "child#001"
+      ],
+      "test": [
+        "adolescent#005",
+        "adolescent#007",
+        "adult#003",
+        "adult#010",
+        "child#006",
+        "child#005"
+      ]
+    }
+  },
+  "metrics": {
+    "rmse_30min": 30.665998458862305,
+    "mae_30min": 21.28870391845703,
+    "rmse_60min": 52.59501647949219,
+    "mae_60min": 35.99712371826172,
+    "rmse_all": 34.634422302246094,
+    "rmse_vs_trueBG_60min": 52.28388214111328,
+    "sensor_noise_rmse": 11.699767112731934
+  },
+  "env": {
+    "torch": "2.11.0",
+    "python": "3.11.16",
+    "machine": "arm64",
+    "cuda": false,
+    "mps": false,
+    "threads": 4
+  }
+}

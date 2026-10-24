@@ -1,0 +1,31 @@
+{
+  "name": "transformer_3patients",
+  "phase": "phase3",
+  "time": "2026-10-23 23:25:53",
+  "config": {
+    "seed": 0,
+    "device": "cpu",
+    "minutes_budget": 6.0,
+    "train_patients": [
+      "adolescent#004",
+      "adult#001",
+      "child#009"
+    ]
+  },
+  "metrics": {
+    "rmse_30min": 25.089351654052734,
+    "mae_30min": 17.265342712402344,
+    "rmse_60min": 39.76240158081055,
+    "mae_60min": 26.483627319335938,
+    "rmse_all": 27.274744033813477,
+    "rmse_vs_trueBG_60min": 38.67357635498047
+  },
+  "env": {
+    "torch": "2.11.0",
+    "python": "3.11.16",
+    "machine": "arm64",
+    "cuda": false,
+    "mps": false,
+    "threads": 4
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "adolescent#005": {
+    "hybrid_pop": 29.471742630004883,
+    "hybrid_laplace_map": 25.68132209777832,
+    "gru_pop": 32.54316329956055,
+    "gru_finetuned": 23.0136775970459
+  },
+  "adolescent#007": {
+    "hybrid_pop": 41.10053253173828,
+    "hybrid_laplace_map": 31.631046295166016,
+    "gru_pop": 41.763240814208984,
+    "gru_finetuned": 30.65574073791504
+  },
+  "adult#003": {
+    "hybrid_pop": 20.79945182800293,
+    "hybrid_laplace_map": 18.40534782409668,
+    "gru_pop": 21.774412155151367,
+    "gru_finetuned": 16.57381248474121
+  },
+  "adult#010": {
+    "hybrid_pop": 20.715063095092773,
+    "hybrid_laplace_map": 20.520370483398438,
+    "gru_pop": 19.48336410522461,
+    "gru_finetuned": 17.069324493408203
+  },
+  "child#005": {
+    "hybrid_pop": 36.74661636352539,
+    "hybrid_laplace_map": 30.314437866210938,
+    "gru_pop": 35.5218391418457,
+    "gru_finetuned": 25.73479461669922
+  },
+  "child#006": {
+    "hybrid_pop": 39.48015594482422,
+    "hybrid_laplace_map": 31.920804977416992,
+    "gru_pop": 35.70145797729492,
+    "gru_finetuned": 35.440574645996094
+  }
+}

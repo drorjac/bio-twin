@@ -1,0 +1,31 @@
+{
+  "name": "hybrid_3patients",
+  "phase": "phase3",
+  "time": "2026-10-23 23:19:39",
+  "config": {
+    "seed": 0,
+    "device": "cpu",
+    "minutes_budget": 6.0,
+    "train_patients": [
+      "adolescent#004",
+      "adult#001",
+      "child#009"
+    ]
+  },
+  "metrics": {
+    "rmse_30min": 24.998388290405273,
+    "mae_30min": 17.446346282958984,
+    "rmse_60min": 38.146610260009766,
+    "mae_60min": 26.38660430908203,
+    "rmse_all": 26.625768661499023,
+    "rmse_vs_trueBG_60min": 37.23542785644531
+  },
+  "env": {
+    "torch": "2.11.0",
+    "python": "3.11.16",
+    "machine": "arm64",
+    "cuda": false,
+    "mps": false,
+    "threads": 4
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "arx",
+  "phase": "phase1",
+  "time": "2026-10-23 22:50:29",
+  "config": {
+    "seed": 0,
+    "split": {
+      "train": [
+        "adolescent#004",
+        "adolescent#006",
+        "adolescent#010",
+        "adolescent#001",
+        "adolescent#009",
+        "adolescent#002",
+        "adult#001",
+        "adult#005",
+        "adult#009",
+        "adult#008",
+        "adult#006",
+        "adult#002",
+        "child#009",
+        "child#003",
+        "child#002",
+        "child#007",
+        "child#008",
+        "child#004"
+      ],
+      "val": [
+        "adolescent#003",
+        "adolescent#008",
+        "adult#004",
+        "adult#007",
+        "child#010",
+        "child#001"
+      ],
+      "test": [
+        "adolescent#005",
+        "adolescent#007",
+        "adult#003",
+        "adult#010",
+        "child#006",
+        "child#005"
+      ]
+    },
+    "lam": 1
+  },
+  "metrics": {
+    "rmse_30min": 20.541854858398438,
+    "mae_30min": 14.976142883300781,
+    "rmse_60min": 36.274898529052734,
+    "mae_60min": 26.10893440246582,
+    "rmse_all": 23.33809471130371,
+    "rmse_vs_trueBG_60min": 35.82643127441406
+  },
+  "env": {
+    "torch": "2.11.0",
+    "python": "3.11.16",
+    "machine": "arm64",
+    "cuda": false,
+    "mps": false,
+    "threads": 4
+  }
+}

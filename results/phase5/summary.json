@@ -1,0 +1,22 @@
+{
+  "max_abs_loss_diff": 2.7641654014587402e-06,
+  "sec_world1": 16.058087825775146,
+  "sec_world2": 11.270127058029175,
+  "profile_ms_per_step": {
+    "transformer": {
+      "forward": 901.6,
+      "backward": 445.1,
+      "optimizer": 11.3
+    },
+    "ssm": {
+      "forward": 1802.3,
+      "backward": 7059.0,
+      "optimizer": 3.7
+    },
+    "gru": {
+      "forward": 225.9,
+      "backward": 273.7,
+      "optimizer": 3.7
+    }
+  }
+}

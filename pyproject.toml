@@ -1,0 +1,29 @@
+[project]
+name = "biotwin"
+version = "0.1.0"
+description = "Hybrid (mechanistic + neural) digital twin for glucose-insulin dynamics on simulated T1D data"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "torch>=2.2",
+  "numpy",
+  "scipy",
+  "pandas",
+  "matplotlib",
+  "pyyaml",
+  "simglucose==0.2.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+agent = ["anthropic"]
+notebook = ["ipykernel", "nbformat", "nbclient"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

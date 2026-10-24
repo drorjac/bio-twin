@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.idea/
+.DS_Store
+data/*.npz
+!data/cohort.npz
+results/checkpoints/*
+!results/checkpoints/*.pt
+results/predictions/
+results/smoke/
+results/*.log

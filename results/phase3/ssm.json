@@ -1,0 +1,37 @@
+{
+  "name": "ssm",
+  "phase": "phase3",
+  "time": "2026-10-23 23:15:29",
+  "config": {
+    "seed": 0,
+    "device": "cpu",
+    "minutes_budget": 6.0,
+    "n_params": 65091,
+    "train_sec": 886.6476328372955,
+    "hist": [
+      {
+        "epoch": 0,
+        "train_loss": 0.0726448044076724,
+        "val_rmse": 24.711137771606445,
+        "sec": 845.3041970729828
+      }
+    ]
+  },
+  "metrics": {
+    "rmse_30min": 23.270212173461914,
+    "mae_30min": 16.69138526916504,
+    "rmse_60min": 39.86574935913086,
+    "mae_60min": 27.40073585510254,
+    "rmse_all": 26.26343536376953,
+    "rmse_vs_trueBG_60min": 39.3459358215332,
+    "latency_ms_per_window": 7.407554425299168
+  },
+  "env": {
+    "torch": "2.11.0",
+    "python": "3.11.16",
+    "machine": "arm64",
+    "cuda": false,
+    "mps": false,
+    "threads": 4
+  }
+}

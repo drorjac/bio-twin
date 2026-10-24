@@ -1,0 +1,24 @@
+{
+  "name": "gru_finetuned",
+  "phase": "phase2",
+  "time": "2026-10-23 23:27:49",
+  "config": {
+    "seed": 0
+  },
+  "metrics": {
+    "rmse_30min": 17.904069900512695,
+    "mae_30min": 12.6825590133667,
+    "rmse_60min": 25.670251846313477,
+    "mae_60min": 17.791316986083984,
+    "rmse_all": 18.611339569091797,
+    "rmse_vs_trueBG_60min": 23.916006088256836
+  },
+  "env": {
+    "torch": "2.11.0",
+    "python": "3.11.16",
+    "machine": "arm64",
+    "cuda": false,
+    "mps": false,
+    "threads": 4
+  }
+}

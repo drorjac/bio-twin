@@ -1,0 +1,27 @@
+{
+  "name": "hybrid_map_conformal80",
+  "phase": "phase2",
+  "time": "2026-10-23 23:27:49",
+  "config": {
+    "seed": 0
+  },
+  "metrics": {
+    "rmse_30min": 17.961387634277344,
+    "mae_30min": 13.663932800292969,
+    "rmse_60min": 26.949951171875,
+    "mae_60min": 20.367719650268555,
+    "rmse_all": 18.918094635009766,
+    "rmse_vs_trueBG_60min": 25.678829193115234,
+    "cov80_all": 0.784387469291687,
+    "cov80_60min": 0.7971078157424927,
+    "width80_60min": 64.1580581665039
+  },
+  "env": {
+    "torch": "2.11.0",
+    "python": "3.11.16",
+    "machine": "arm64",
+    "cuda": false,
+    "mps": false,
+    "threads": 4
+  }
+}
