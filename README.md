@@ -8,10 +8,14 @@ patient with Bayesian error bars, and a tool-using agent on top answers "what if
 
 > Research prototype on simulated data. Not a medical device and not medical advice.
 
-**Start with the notebook:** [`notebooks/tutorial.ipynb`](notebooks/tutorial.ipynb) goes
-through the whole thing step by step: how the data is generated, the theory behind each model,
-the evaluation protocol, and the results. It runs in about 30 seconds using the committed data
-and checkpoints.
+**Start with the notebook:** [`notebooks/tutorial.ipynb`](notebooks/tutorial.ipynb) covers
+the whole project in four parts:
+- **Problem**: the data and how it's generated.
+- **Method**: the theory behind every model, training, uncertainty and the agent.
+- **Experiments**: seven experiments, run live.
+- **Results**: the table, plus what it does and doesn't show.
+
+It takes about 4 minutes on a laptop CPU, using the committed data and checkpoints.
 
 ## What's in here
 
