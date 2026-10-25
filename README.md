@@ -8,7 +8,9 @@ patient with Bayesian error bars, and a tool-using agent on top answers "what if
 
 > Research prototype on simulated data. Not a medical device and not medical advice.
 
-**Start with the notebook:** [`notebooks/tutorial.ipynb`](notebooks/tutorial.ipynb) covers
+**Learn it step by step:** [`tutorials/`](tutorials/) has 8 workbooks that rebuild the project from scratch, with exercises, hints and quizzes.
+
+**See it end to end:** [`notebooks/tutorial.ipynb`](notebooks/tutorial.ipynb) covers
 the whole project in four parts:
 - **Problem**: the data and how it's generated.
 - **Method**: the theory behind every model, training, uncertainty and the agent.
@@ -55,9 +57,10 @@ What came out of it:
   intervals cover 80 % of held-out points.
 - **Fine-tuning a black box was slightly more accurate.** The hybrid earns its place through
   interpretable parameters and uncertainty, not raw RMSE.
-- **The NN term can break causality.** For one patient it makes an insulin bolus *raise*
-  glucose. Removing the NN fixes the sign. RMSE didn't catch this; a metamorphic test did.
-  See section 9 of the notebook.
+- **The NN term can break causality.** In 11 of 72 test situations (5 of 6 patients), the
+  population hybrid predicts that a 4 U bolus doesn't lower glucose. The pure ODE: 0 of 72. RMSE
+  didn't catch this; metamorphic tests did. See section E5 of the notebook, and
+  `tutorials/04` for why (the network learned to cancel the insulin term).
 
 Full tables are in `results/results_table.md` and the raw run logs are in `results/phase*/`.
 `docs/claims.md` lists what these results do and don't support.
@@ -99,7 +102,8 @@ Everything was run on a CPU (M2 Mac). The code picks CUDA, then MPS, then CPU; s
 ```
 src/biotwin/   data/ (simulator, windows, splits)  models/  uncertainty.py  agent/
 scripts/       one script per phase, 00–06
-notebooks/     tutorial.ipynb
+notebooks/     tutorial.ipynb (end-to-end walkthrough)
+tutorials/     8 hands-on workbooks, 00–07
 tests/         leakage + model tests
 docs/          biology primer, talk outline, claims
 results/       metrics JSON, figures, checkpoints

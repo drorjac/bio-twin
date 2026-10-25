@@ -12,8 +12,10 @@
   accurate here.
 - Under a CPU budget of 6 min per model, a small Transformer and a pure-PyTorch Mamba-style SSM did
   not beat the GRU or the hybrid.
-- The neural correction can flip the sign of the insulin effect for some patients and states.
-  A metamorphic test detected this; disabling the NN term restores the correct sign.
+- The neural correction can flip the sign of the insulin effect. With population parameters, a 4 U
+  bolus fails to lower predicted glucose in 11/72 test situations across 5 of 6 test patients (pure
+  ODE: 0/72). The network's ∂f/∂X is positive in every state visited; it partly cancels the physics
+  term −X·G.
 - DDP with 2 processes reproduces single-process training (max loss diff 2.8e-6).
 - The evaluation pipeline has automated leakage tests.
 
